@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <IncludePath>$(SolutionDir)deps\glew-2.1.0\include;$(SolutionDir)deps\glfw-3.3.7.bin.WIN64\include;$(SolutionDir)deps\glutdlls37beta;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)deps\glew-2.1.0\lib\Release\x64;$(SolutionDir)deps\glfw-3.3.7.bin.WIN64\lib-vc2019;$(SolutionDir)deps\glutdlls37beta;$(LibraryPath)</LibraryPath>
+    <LibraryWPath>$(SolutionDir)deps\glutdlls37beta;$(LibraryWPath)</LibraryWPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <Link>
+      <AdditionalDependencies>glut.lib;glew32s.lib;glfw3.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup />
+</Project>
